@@ -29,9 +29,9 @@ run;
 
 %generate(id=9421,names=john_diale,email=john@gmail,contact=0764534263,street_name=lol,house_number=34,city=pretoria,postcode=0162,province=gauteng,search_count=0);
 
-DATA full_details; 
-   SET all_details temp;
-PROC PRINT DATA = full_details; 
+DATA All_details; 
+   SET All_details temp;
+PROC PRINT DATA = All_details; 
 RUN;  
 quit;
 

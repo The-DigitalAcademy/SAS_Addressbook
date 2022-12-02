@@ -11,7 +11,7 @@
 %put province = &province;
 %put search_count = &search_count;
 
-data temp;
+data temp_2;
 	id = &id;
 	names = "&names";
 	email = "&email";
@@ -29,7 +29,7 @@ run;
 
 
 data All_details;
-   modify All_details temp;                                  /* 1*/
+   modify All_details temp_2;                                  /* 1*/
       by id;
       select (_iorc_);                                             /* 2*/
    /*** The observation exists in the master data set   */ 
