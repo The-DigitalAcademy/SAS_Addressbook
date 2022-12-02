@@ -89,7 +89,7 @@
 	    		proc print data=result;
 	    		run;
             %end; 
-    %if &filter = contact %then 
+    %if &filter = city %then 
 	 		%do;
 	 			data All_details;
 	 				set All_details;
@@ -97,12 +97,12 @@
 	 			run;
  				data result;
            			set All_details;
-	    			where contact = "&x";
+	    			where city = "&x";
 	    		proc print data=result;
 	    		run;
             %end;
             
 %mend search;
 
-%search(postcode,0157);
+%search(city,Polokwane);
 
