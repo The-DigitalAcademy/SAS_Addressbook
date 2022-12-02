@@ -1,4 +1,3 @@
-
 %macro deleting(id);
 	%put id= &id;
 	
@@ -10,7 +9,7 @@
 	proc sort data= all_details;
 	    by id;
 	run;	
-%mend delete;
+%mend deleting;
 
 %deleting(9420)
 
